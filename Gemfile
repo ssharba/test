@@ -15,6 +15,13 @@ group :development, :test do
   gem 'byebug', platform: :mri
 end
 
+group :test do
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'faker'
+end
+
 group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
