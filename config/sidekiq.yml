@@ -3,4 +3,4 @@ pidfile: tmp/pids/sidekiq.pid
 logfile: ./log/sidekiq.log
 queues:
  - default
- - new_availity
+ - create_person
