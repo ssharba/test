@@ -7,8 +7,9 @@ class CreateNewPersonJob
     if person.save
       Rails.logger.info(person_params)
     else
-      Rails.logger.error(action: "create", message: e.message)
-      raise person.errors.full_messages
+      Rails.logger.error(action: "create", message: "#{person.errors.full_messages}")
+      raise "#{person.errors.full_messages}"
+
     end
   end
 end
