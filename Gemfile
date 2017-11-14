@@ -5,11 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
 gem 'rails', '~> 5.0.6'
 gem 'sqlite3'
 gem 'puma', '~> 3.0'
 gem 'sidekiq'
+gem 'active_model_serializers'
 
 group :development, :test do
   gem 'byebug', platform: :mri
